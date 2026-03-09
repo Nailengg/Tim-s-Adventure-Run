@@ -3,7 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - EnemyTrigger
+  - Physics
+  - EnemyObstacle
+  - BlockTrigger
+  - Bonus_Block_Hidden
+  - Arrow
+  - Shield
+  - BonusBaloon
+  - Diamond
+  - BonusCloudsExit
+  - Mushroom
+  - FinishFlag
+  - Checkpoint
+  - Coin
+  - BonusEnter
+  - Trap
+  - BonusExit
+  - Bullet
+  - PlayerTrigger
+  - PlayerFeet
+  - PlayerHead
   layers:
   - Default
   - TransparentFX
@@ -38,9 +60,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: UI
-    uniqueID: 1147772863
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 707489273
+    locked: 0
+  - name: Background
+    uniqueID: 199820427
+    locked: 0
+  - name: Item
+    uniqueID: 3858641261
+    locked: 0
+  - name: Monter
+    uniqueID: 830214197
+    locked: 0
+  - name: Player
+    uniqueID: 2544706053
+    locked: 0
+  - name: UI
+    uniqueID: 1147772863
     locked: 0

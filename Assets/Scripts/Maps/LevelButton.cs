@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class LevelButton : MonoBehaviour
 {
@@ -40,6 +37,9 @@ public class LevelButton : MonoBehaviour
             starsParent.SetActive(true);
             UpdateStars(starCount);
         }
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(OnClickLevel);
     }
 
     void UpdateStars(int count)
@@ -50,8 +50,10 @@ public class LevelButton : MonoBehaviour
         }
     }
 
-    public void OnClickLevel()
+    void OnClickLevel()
     {
-        SceneManager.LoadScene("Level_" + levelIndex);
+        LevelLoader.selectedLevel = levelIndex;
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingMap");
     }
 }
