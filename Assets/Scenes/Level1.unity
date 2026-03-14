@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1687062}
   m_Layer: 0
   m_Name: Tileset_1_0 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -956,6 +956,7 @@ GameObject:
   - component: {fileID: 38671065}
   - component: {fileID: 38671064}
   - component: {fileID: 38671063}
+  - component: {fileID: 38671066}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -1064,6 +1065,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38671061}
   m_CullTransparentMesh: 1
+--- !u!114 &38671066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38671061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: MoveLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: StopMove
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &39588767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,7 +1123,7 @@ GameObject:
   - component: {fileID: 39588769}
   m_Layer: 0
   m_Name: Tileset_1_0 (53)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1206,7 +1252,7 @@ GameObject:
   - component: {fileID: 41945652}
   m_Layer: 0
   m_Name: Tileset_1_28 (37)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1291,7 +1337,7 @@ GameObject:
   - component: {fileID: 48640148}
   m_Layer: 0
   m_Name: Tileset_1_0 (58)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1505,7 +1551,7 @@ GameObject:
   - component: {fileID: 61894993}
   m_Layer: 0
   m_Name: Tileset_1_0 (77)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1786,7 +1832,7 @@ GameObject:
   - component: {fileID: 71808623}
   m_Layer: 0
   m_Name: Tileset_1_28 (33)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,7 +1921,7 @@ GameObject:
   - component: {fileID: 85440248}
   m_Layer: 0
   m_Name: Tileset_1_28 (39)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2090,7 @@ GameObject:
   - component: {fileID: 94414491}
   m_Layer: 0
   m_Name: Tileset_1_0 (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2320,7 +2366,7 @@ GameObject:
   - component: {fileID: 110677237}
   m_Layer: 0
   m_Name: Tileset_1_0 (56)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2449,7 +2495,7 @@ GameObject:
   - component: {fileID: 129982763}
   m_Layer: 0
   m_Name: Tileset_1_28 (52)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2534,7 +2580,7 @@ GameObject:
   - component: {fileID: 144504325}
   m_Layer: 0
   m_Name: Tileset_1_0 (71)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2664,7 +2710,7 @@ GameObject:
   - component: {fileID: 150109138}
   m_Layer: 0
   m_Name: Tileset_1_0 (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2794,7 +2840,7 @@ GameObject:
   - component: {fileID: 152161443}
   m_Layer: 0
   m_Name: Tileset_1_0 (63)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2923,7 +2969,7 @@ GameObject:
   - component: {fileID: 161245743}
   m_Layer: 0
   m_Name: Tileset_1_9 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3227,8 +3273,9 @@ GameObject:
   - component: {fileID: 186046019}
   - component: {fileID: 186046018}
   - component: {fileID: 186046017}
+  - component: {fileID: 186046020}
   m_Layer: 5
-  m_Name: Up
+  m_Name: Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3335,6 +3382,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186046015}
   m_CullTransparentMesh: 1
+--- !u!114 &186046020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186046015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: Jump
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &187471574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,7 +3424,7 @@ GameObject:
   - component: {fileID: 187471576}
   m_Layer: 0
   m_Name: Tileset_1_0 (40)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4125,7 +4201,7 @@ GameObject:
   - component: {fileID: 237044917}
   m_Layer: 0
   m_Name: Tileset_1_15 (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4255,7 +4331,7 @@ GameObject:
   - component: {fileID: 248104330}
   m_Layer: 0
   m_Name: Tileset_1_0 (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4459,7 +4535,7 @@ GameObject:
   - component: {fileID: 271106215}
   m_Layer: 0
   m_Name: Tileset_1_28 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4628,7 +4704,7 @@ GameObject:
   - component: {fileID: 274099808}
   m_Layer: 0
   m_Name: Tileset_1_0 (64)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4841,7 +4917,7 @@ GameObject:
   - component: {fileID: 281358451}
   m_Layer: 0
   m_Name: Tileset_1_28 (26)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4926,7 +5002,7 @@ GameObject:
   - component: {fileID: 290383308}
   m_Layer: 0
   m_Name: Tileset_1_0 (44)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5207,7 +5283,7 @@ GameObject:
   - component: {fileID: 296890102}
   m_Layer: 0
   m_Name: Tileset_1_28 (30)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5292,7 +5368,7 @@ GameObject:
   - component: {fileID: 305353095}
   m_Layer: 0
   m_Name: Tileset_1_0 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5792,7 +5868,7 @@ GameObject:
   - component: {fileID: 336643332}
   m_Layer: 0
   m_Name: Tileset_1_0 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6225,7 +6301,7 @@ GameObject:
   - component: {fileID: 356770316}
   m_Layer: 0
   m_Name: Tileset_1_28 (35)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6462,7 +6538,7 @@ GameObject:
   - component: {fileID: 365620660}
   m_Layer: 0
   m_Name: Tileset_1_0 (26)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6592,7 +6668,7 @@ GameObject:
   - component: {fileID: 367906874}
   m_Layer: 0
   m_Name: Tileset_1_0 (45)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6722,7 +6798,7 @@ GameObject:
   - component: {fileID: 371059982}
   m_Layer: 0
   m_Name: Tileset_1_0 (25)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7004,7 +7080,7 @@ GameObject:
   - component: {fileID: 383413817}
   m_Layer: 0
   m_Name: Tileset_1_0 (19)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7133,7 +7209,7 @@ GameObject:
   - component: {fileID: 391712728}
   m_Layer: 0
   m_Name: Tileset_1_28 (46)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7606,7 +7682,7 @@ GameObject:
   - component: {fileID: 410527755}
   m_Layer: 0
   m_Name: Tileset_1_0 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7962,7 +8038,7 @@ GameObject:
   - component: {fileID: 428497801}
   m_Layer: 0
   m_Name: Tileset_1_28 (50)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8131,7 +8207,7 @@ GameObject:
   - component: {fileID: 443316405}
   m_Layer: 0
   m_Name: Tileset_1_0 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8260,7 +8336,7 @@ GameObject:
   - component: {fileID: 450955182}
   m_Layer: 0
   m_Name: Tileset_1_28 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8344,7 +8420,7 @@ GameObject:
   - component: {fileID: 458822470}
   m_Layer: 0
   m_Name: Tileset_1_28 (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8429,7 +8505,7 @@ GameObject:
   - component: {fileID: 465087271}
   m_Layer: 0
   m_Name: Tileset_1_15 (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8559,7 +8635,7 @@ GameObject:
   - component: {fileID: 468409572}
   m_Layer: 0
   m_Name: Tileset_1_0 (38)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8689,7 +8765,7 @@ GameObject:
   - component: {fileID: 469610844}
   m_Layer: 0
   m_Name: Tileset_1_0 (20)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8818,7 +8894,7 @@ GameObject:
   - component: {fileID: 481262147}
   m_Layer: 0
   m_Name: Tileset_1_28 (38)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9138,7 +9214,7 @@ GameObject:
   - component: {fileID: 494644572}
   m_Layer: 0
   m_Name: Tileset_1_28 (22)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9307,7 +9383,7 @@ GameObject:
   - component: {fileID: 496860395}
   m_Layer: 0
   m_Name: Tileset_1_0 (48)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9436,7 +9512,7 @@ GameObject:
   - component: {fileID: 499049881}
   m_Layer: 0
   m_Name: Tileset_1_28 (25)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9672,7 +9748,7 @@ GameObject:
   - component: {fileID: 521832658}
   m_Layer: 0
   m_Name: Tileset_1_28 (45)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10115,7 +10191,7 @@ GameObject:
   - component: {fileID: 568429072}
   m_Layer: 0
   m_Name: Tileset_1_0 (52)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10245,7 +10321,7 @@ GameObject:
   - component: {fileID: 577542552}
   m_Layer: 0
   m_Name: Tileset_1_0 (72)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10654,7 +10730,7 @@ GameObject:
   - component: {fileID: 600636123}
   m_Layer: 0
   m_Name: Tileset_1_28 (49)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10777,7 +10853,7 @@ GameObject:
   - component: {fileID: 605543043}
   m_Layer: 0
   m_Name: Tileset_1_0 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10907,7 +10983,7 @@ GameObject:
   - component: {fileID: 610683801}
   m_Layer: 0
   m_Name: Tileset_1_15 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11318,7 +11394,7 @@ GameObject:
   - component: {fileID: 636795851}
   m_Layer: 0
   m_Name: Tileset_1_28 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11403,7 +11479,7 @@ GameObject:
   - component: {fileID: 637530541}
   m_Layer: 0
   m_Name: Tileset_1_0 (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11617,7 +11693,7 @@ GameObject:
   - component: {fileID: 650475395}
   m_Layer: 0
   m_Name: Tileset_1_0 (60)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11747,7 +11823,7 @@ GameObject:
   - component: {fileID: 657724139}
   m_Layer: 0
   m_Name: Tileset_1_0 (59)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12127,6 +12203,7 @@ GameObject:
   - component: {fileID: 686461014}
   - component: {fileID: 686461013}
   - component: {fileID: 686461012}
+  - component: {fileID: 686461015}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12208,6 +12285,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686461015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686461011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c64de4a80217246a48ec1a1084d88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1690098493}
 --- !u!1 &686846422
 GameObject:
   m_ObjectHideFlags: 0
@@ -12221,7 +12311,7 @@ GameObject:
   - component: {fileID: 686846424}
   m_Layer: 0
   m_Name: Tileset_1_15 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12387,7 +12477,7 @@ GameObject:
   - component: {fileID: 696702670}
   m_Layer: 0
   m_Name: Tileset_1_0 (57)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12972,7 +13062,7 @@ GameObject:
   - component: {fileID: 707869186}
   m_Layer: 0
   m_Name: Tileset_1_28 (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13186,7 +13276,7 @@ GameObject:
   - component: {fileID: 721134273}
   m_Layer: 0
   m_Name: Tileset_1_28 (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13328,7 +13418,7 @@ GameObject:
   - component: {fileID: 726034419}
   m_Layer: 0
   m_Name: Tileset_1_0 (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13458,7 +13548,7 @@ GameObject:
   - component: {fileID: 731091035}
   m_Layer: 0
   m_Name: Tileset_1_15 (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13624,7 +13714,7 @@ GameObject:
   - component: {fileID: 750884746}
   m_Layer: 0
   m_Name: Tileset_1_28 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13708,7 +13798,7 @@ GameObject:
   - component: {fileID: 762055659}
   m_Layer: 0
   m_Name: Tileset_1_31
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13792,7 +13882,7 @@ GameObject:
   - component: {fileID: 765613757}
   m_Layer: 0
   m_Name: Tileset_1_9 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14007,7 +14097,7 @@ GameObject:
   - component: {fileID: 780441714}
   m_Layer: 0
   m_Name: Tileset_1_0 (36)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14136,7 +14226,7 @@ GameObject:
   - component: {fileID: 790267153}
   m_Layer: 0
   m_Name: Tileset_1_28 (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14366,7 +14456,7 @@ GameObject:
   - component: {fileID: 819466506}
   m_Layer: 0
   m_Name: Tileset_1_28 (31)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14602,8 +14692,9 @@ GameObject:
   - component: {fileID: 853992470}
   - component: {fileID: 853992469}
   - component: {fileID: 853992468}
+  - component: {fileID: 853992471}
   m_Layer: 5
-  m_Name: Down
+  m_Name: Sit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14710,6 +14801,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853992466}
   m_CullTransparentMesh: 1
+--- !u!114 &853992471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853992466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: Sit
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: Sit
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &860951305
 GameObject:
   m_ObjectHideFlags: 0
@@ -14874,7 +15010,7 @@ GameObject:
   - component: {fileID: 863098897}
   m_Layer: 0
   m_Name: Tileset_1_28 (43)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15125,7 +15261,7 @@ GameObject:
   - component: {fileID: 889922450}
   m_Layer: 0
   m_Name: Tileset_1_0 (42)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15255,7 +15391,7 @@ GameObject:
   - component: {fileID: 891397724}
   m_Layer: 0
   m_Name: Tileset_1_0 (55)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15384,7 +15520,7 @@ GameObject:
   - component: {fileID: 893962988}
   m_Layer: 0
   m_Name: Tileset_1_28 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15469,7 +15605,7 @@ GameObject:
   - component: {fileID: 898768738}
   m_Layer: 0
   m_Name: Tileset_1_0 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15750,7 +15886,7 @@ GameObject:
   - component: {fileID: 922594794}
   m_Layer: 0
   m_Name: Tileset_1_9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15986,7 +16122,7 @@ GameObject:
   - component: {fileID: 928188382}
   m_Layer: 0
   m_Name: Tileset_1_28 (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16071,7 +16207,7 @@ GameObject:
   - component: {fileID: 947322154}
   m_Layer: 0
   m_Name: Tileset_1_0 (54)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16201,7 +16337,7 @@ GameObject:
   - component: {fileID: 970936618}
   m_Layer: 0
   m_Name: Tileset_1_0 (78)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16545,7 +16681,7 @@ GameObject:
   - component: {fileID: 996475407}
   m_Layer: 0
   m_Name: Tileset_1_15 (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16674,7 +16810,7 @@ GameObject:
   - component: {fileID: 1002513706}
   m_Layer: 0
   m_Name: Tileset_1_28 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16843,7 +16979,7 @@ GameObject:
   - component: {fileID: 1011153436}
   m_Layer: 0
   m_Name: Tileset_1_0 (22)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16972,7 +17108,7 @@ GameObject:
   - component: {fileID: 1014734451}
   m_Layer: 0
   m_Name: Tileset_1_28
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17056,6 +17192,7 @@ GameObject:
   - component: {fileID: 1025289401}
   - component: {fileID: 1025289400}
   - component: {fileID: 1025289399}
+  - component: {fileID: 1025289402}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -17164,6 +17301,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025289397}
   m_CullTransparentMesh: 1
+--- !u!114 &1025289402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025289397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: MoveRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690098497}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: StopMove
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1032832657
 GameObject:
   m_ObjectHideFlags: 0
@@ -17177,7 +17359,7 @@ GameObject:
   - component: {fileID: 1032832659}
   m_Layer: 0
   m_Name: Tileset_1_0 (39)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17307,7 +17489,7 @@ GameObject:
   - component: {fileID: 1044396105}
   m_Layer: 0
   m_Name: Tileset_1_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17589,7 +17771,7 @@ GameObject:
   - component: {fileID: 1048135314}
   m_Layer: 0
   m_Name: Tileset_1_0 (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17917,7 +18099,7 @@ GameObject:
   - component: {fileID: 1074529478}
   m_Layer: 0
   m_Name: Tileset_1_28 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18086,7 +18268,7 @@ GameObject:
   - component: {fileID: 1082395164}
   m_Layer: 0
   m_Name: Tileset_1_15 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18367,7 +18549,7 @@ GameObject:
   - component: {fileID: 1112630855}
   m_Layer: 0
   m_Name: Tileset_1_28 (29)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18536,7 +18718,7 @@ GameObject:
   - component: {fileID: 1122496933}
   m_Layer: 0
   m_Name: Tileset_1_0 (34)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19008,7 +19190,7 @@ GameObject:
   - component: {fileID: 1135711519}
   m_Layer: 0
   m_Name: Tileset_1_0 (21)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19258,7 +19440,7 @@ GameObject:
   - component: {fileID: 1147619375}
   m_Layer: 0
   m_Name: Tileset_1_0 (47)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19393,7 +19575,7 @@ GameObject:
   - component: {fileID: 1175082859}
   m_Layer: 0
   m_Name: Tileset_1_0 (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19585,7 +19767,7 @@ GameObject:
   - component: {fileID: 1196631562}
   m_Layer: 0
   m_Name: Tileset_1_0 (67)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20035,7 +20217,7 @@ GameObject:
   - component: {fileID: 1229407633}
   m_Layer: 0
   m_Name: Tileset_1_15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20165,7 +20347,7 @@ GameObject:
   - component: {fileID: 1247906788}
   m_Layer: 0
   m_Name: Tileset_1_0 (70)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20415,7 +20597,7 @@ GameObject:
   - component: {fileID: 1257692073}
   m_Layer: 0
   m_Name: Tileset_1_0 (28)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20601,7 +20783,7 @@ GameObject:
   - component: {fileID: 1285214655}
   m_Layer: 0
   m_Name: Tileset_1_28 (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20685,7 +20867,7 @@ GameObject:
   - component: {fileID: 1295869484}
   m_Layer: 0
   m_Name: Tileset_1_28 (48)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21067,7 +21249,7 @@ GameObject:
   - component: {fileID: 1316644469}
   m_Layer: 0
   m_Name: Tileset_1_0 (49)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21365,7 +21547,7 @@ GameObject:
   - component: {fileID: 1342422886}
   m_Layer: 0
   m_Name: Tileset_1_0 (35)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21495,7 +21677,7 @@ GameObject:
   - component: {fileID: 1347804797}
   m_Layer: 0
   m_Name: Tileset_1_15 (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21624,7 +21806,7 @@ GameObject:
   - component: {fileID: 1352693183}
   m_Layer: 0
   m_Name: Tileset_1_28 (36)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21839,7 +22021,7 @@ GameObject:
   - component: {fileID: 1377184716}
   m_Layer: 0
   m_Name: Tileset_1_0 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21968,7 +22150,7 @@ GameObject:
   - component: {fileID: 1377212837}
   m_Layer: 0
   m_Name: Tileset_1_28 (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22205,7 +22387,7 @@ GameObject:
   - component: {fileID: 1400824625}
   m_Layer: 0
   m_Name: Tileset_1_0 (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22538,7 +22720,7 @@ GameObject:
   - component: {fileID: 1421005577}
   m_Layer: 0
   m_Name: Tileset_1_28 (20)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22623,7 +22805,7 @@ GameObject:
   - component: {fileID: 1425394478}
   m_Layer: 0
   m_Name: Tileset_1_0 (62)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23038,7 +23220,7 @@ GameObject:
   - component: {fileID: 1440175575}
   m_Layer: 0
   m_Name: Tileset_1_28 (53)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23275,7 +23457,7 @@ GameObject:
   - component: {fileID: 1445514096}
   m_Layer: 0
   m_Name: Tileset_1_15 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23405,7 +23587,7 @@ GameObject:
   - component: {fileID: 1452617527}
   m_Layer: 0
   m_Name: Tileset_1_0 (37)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23687,7 +23869,7 @@ GameObject:
   - component: {fileID: 1463100709}
   m_Layer: 0
   m_Name: Tileset_1_0 (61)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23817,7 +23999,7 @@ GameObject:
   - component: {fileID: 1465834028}
   m_Layer: 0
   m_Name: Tileset_1_0 (75)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23946,7 +24128,7 @@ GameObject:
   - component: {fileID: 1471689840}
   m_Layer: 0
   m_Name: Tileset_1_28 (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24183,7 +24365,7 @@ GameObject:
   - component: {fileID: 1487259984}
   m_Layer: 0
   m_Name: Tileset_1_0 (50)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24443,7 +24625,7 @@ GameObject:
   - component: {fileID: 1492957338}
   m_Layer: 0
   m_Name: Tileset_1_0 (74)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24573,7 +24755,7 @@ GameObject:
   - component: {fileID: 1493145842}
   m_Layer: 0
   m_Name: Tileset_1_0 (31)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24975,7 +25157,7 @@ GameObject:
   - component: {fileID: 1521141635}
   m_Layer: 0
   m_Name: Tileset_1_0 (68)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25105,7 +25287,7 @@ GameObject:
   - component: {fileID: 1522342003}
   m_Layer: 0
   m_Name: Tileset_1_0 (43)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25440,7 +25622,7 @@ GameObject:
   - component: {fileID: 1536002824}
   m_Layer: 0
   m_Name: Tileset_1_15 (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25654,7 +25836,7 @@ GameObject:
   - component: {fileID: 1549427738}
   m_Layer: 0
   m_Name: Tileset_1_15 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25997,7 +26179,7 @@ GameObject:
   - component: {fileID: 1567386585}
   m_Layer: 0
   m_Name: Tileset_1_28 (41)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26202,7 +26384,7 @@ GameObject:
   - component: {fileID: 1569654874}
   m_Layer: 0
   m_Name: Tileset_1_0 (69)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26737,7 +26919,7 @@ GameObject:
   - component: {fileID: 1620524213}
   m_Layer: 0
   m_Name: Tileset_1_28 (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26821,7 +27003,7 @@ GameObject:
   - component: {fileID: 1635022523}
   m_Layer: 0
   m_Name: Tileset_1_28 (27)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27142,7 +27324,7 @@ GameObject:
   - component: {fileID: 1649618557}
   m_Layer: 0
   m_Name: Tileset_1_0 (66)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27356,7 +27538,7 @@ GameObject:
   - component: {fileID: 1676867240}
   m_Layer: 0
   m_Name: Tileset_1_15 (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27485,7 +27667,7 @@ GameObject:
   - component: {fileID: 1679006110}
   m_Layer: 0
   m_Name: Tileset_1_28 (54)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27569,7 +27751,7 @@ GameObject:
   - component: {fileID: 1689869363}
   m_Layer: 0
   m_Name: Tileset_1_28 (19)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27651,6 +27833,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1690098493}
   - component: {fileID: 1690098492}
+  - component: {fileID: 1690098496}
+  - component: {fileID: 1690098495}
+  - component: {fileID: 1690098494}
+  - component: {fileID: 1690098497}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -27699,15 +27885,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 09a7bb88c0d5d1c48a039f737f087a54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6496034, y: 1.0695709}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1690098493
@@ -27722,9 +27908,122 @@ Transform:
   m_LocalPosition: {x: -0.028460778, y: -1.9968634, z: -0.04424663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2080609957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1690098494
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690098491}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f96b7e54da569040b6917173f50805f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &1690098495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690098491}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025223732, y: 0.0036034584}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.71, y: 1.08}
+    newSize: {x: 0.6496034, y: 1.0695709}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.57307047, y: 1.0583797}
+  m_EdgeRadius: 0
+--- !u!50 &1690098496
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690098491}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 3
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!114 &1690098497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690098491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2196729da8331ef4eb4e7662987258c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  jumpForce: 8
+  groundCheck: {fileID: 2080609957}
+  groundRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1692450123
 GameObject:
   m_ObjectHideFlags: 0
@@ -27890,7 +28189,7 @@ GameObject:
   - component: {fileID: 1696629436}
   m_Layer: 0
   m_Name: Tileset_1_0 (73)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28103,7 +28402,7 @@ GameObject:
   - component: {fileID: 1711200449}
   m_Layer: 0
   m_Name: Tileset_1_9 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28193,7 +28492,7 @@ GameObject:
   - component: {fileID: 1719480169}
   m_Layer: 0
   m_Name: Tileset_1_0 (46)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28490,7 +28789,7 @@ GameObject:
   - component: {fileID: 1729914568}
   m_Layer: 0
   m_Name: Tileset_1_28 (34)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28817,7 +29116,7 @@ GameObject:
   - component: {fileID: 1739225699}
   m_Layer: 0
   m_Name: Tileset_1_0 (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28947,7 +29246,7 @@ GameObject:
   - component: {fileID: 1740541029}
   m_Layer: 0
   m_Name: Tileset_1_0 (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29076,7 +29375,7 @@ GameObject:
   - component: {fileID: 1755292274}
   m_Layer: 0
   m_Name: Tileset_1_28 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29160,7 +29459,7 @@ GameObject:
   - component: {fileID: 1761138921}
   m_Layer: 0
   m_Name: Tileset_1_28 (51)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29434,7 +29733,7 @@ GameObject:
   - component: {fileID: 1774116769}
   m_Layer: 0
   m_Name: Tileset_1_28 (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29576,7 +29875,7 @@ GameObject:
   - component: {fileID: 1785162599}
   m_Layer: 0
   m_Name: Tileset_1_0 (51)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29706,7 +30005,7 @@ GameObject:
   - component: {fileID: 1792346847}
   m_Layer: 0
   m_Name: Tileset_1_0 (27)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30163,7 +30462,7 @@ GameObject:
   - component: {fileID: 1804233863}
   m_Layer: 0
   m_Name: Tileset_1_0 (29)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30376,7 +30675,7 @@ GameObject:
   - component: {fileID: 1812949135}
   m_Layer: 0
   m_Name: Tileset_1_28 (44)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30460,7 +30759,7 @@ GameObject:
   - component: {fileID: 1813668583}
   m_Layer: 0
   m_Name: Tileset_1_28 (40)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30849,7 +31148,7 @@ GameObject:
   - component: {fileID: 1851628627}
   m_Layer: 0
   m_Name: Tileset_1_0 (32)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31260,7 +31559,7 @@ GameObject:
   - component: {fileID: 1864404860}
   m_Layer: 0
   m_Name: Tileset_1_28 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31518,7 +31817,7 @@ GameObject:
   - component: {fileID: 1881868064}
   m_Layer: 0
   m_Name: Tileset_1_0 (41)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31648,7 +31947,7 @@ GameObject:
   - component: {fileID: 1893396809}
   m_Layer: 0
   m_Name: Tileset_1_15 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31777,7 +32076,7 @@ GameObject:
   - component: {fileID: 1893469913}
   m_Layer: 0
   m_Name: Tileset_1_28 (28)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32088,7 +32387,7 @@ GameObject:
   - component: {fileID: 1914233743}
   m_Layer: 0
   m_Name: Tileset_1_28 (42)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32210,7 +32509,7 @@ GameObject:
   - component: {fileID: 1923120948}
   m_Layer: 0
   m_Name: Tileset_1_0 (33)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32340,7 +32639,7 @@ GameObject:
   - component: {fileID: 1925898393}
   m_Layer: 0
   m_Name: Tileset_1_0 (65)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32720,7 +33019,7 @@ GameObject:
   - component: {fileID: 1935986979}
   m_Layer: 0
   m_Name: Tileset_1_0 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33068,7 +33367,7 @@ GameObject:
   - component: {fileID: 1966155269}
   m_Layer: 0
   m_Name: Tileset_1_28 (21)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33153,7 +33452,7 @@ GameObject:
   - component: {fileID: 1972967561}
   m_Layer: 0
   m_Name: Tileset_1_15 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33282,7 +33581,7 @@ GameObject:
   - component: {fileID: 1982346227}
   m_Layer: 0
   m_Name: Tileset_1_28 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33366,7 +33665,7 @@ GameObject:
   - component: {fileID: 1989514327}
   m_Layer: 0
   m_Name: Tileset_1_28 (32)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33687,7 +33986,7 @@ GameObject:
   - component: {fileID: 1998740993}
   m_Layer: 0
   m_Name: Tileset_1_15 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33817,7 +34116,7 @@ GameObject:
   - component: {fileID: 2000065173}
   m_Layer: 0
   m_Name: Tileset_1_0 (76)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34030,7 +34329,7 @@ GameObject:
   - component: {fileID: 2017533048}
   m_Layer: 0
   m_Name: Tileset_1_28 (47)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34435,7 +34734,7 @@ GameObject:
   - component: {fileID: 2053527157}
   m_Layer: 0
   m_Name: Tileset_1_0 (30)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34565,7 +34864,7 @@ GameObject:
   - component: {fileID: 2056254127}
   m_Layer: 0
   m_Name: Tileset_1_15 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34847,7 +35146,7 @@ GameObject:
   - component: {fileID: 2069043385}
   m_Layer: 0
   m_Name: Tileset_1_0 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35116,6 +35415,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.4117647}
   m_EdgeRadius: 0
+--- !u!1 &2080609956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080609957}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2080609957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080609956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1690098493}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083758318
 GameObject:
   m_ObjectHideFlags: 0
