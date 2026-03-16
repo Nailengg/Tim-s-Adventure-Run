@@ -8,9 +8,12 @@ public class CameraFollow : MonoBehaviour
 
     float maxX;
 
+    Camera cam;
+
     void Start()
     {
         maxX = transform.position.x;
+        cam = Camera.main;
     }
 
     void LateUpdate()
@@ -25,5 +28,16 @@ public class CameraFollow : MonoBehaviour
             transform.position.y,
             transform.position.z
         );
+
+        float cameraLeft = transform.position.x - cam.orthographicSize * cam.aspect;
+
+        if (player.position.x < cameraLeft)
+        {
+            player.position = new Vector3(
+                cameraLeft,
+                player.position.y,
+                player.position.z
+            );
+        }
     }
 }
