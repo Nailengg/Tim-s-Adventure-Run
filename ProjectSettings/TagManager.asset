@@ -27,6 +27,7 @@ TagManager:
   - PlayerFeet
   - PlayerHead
   - Ground
+  - Water
   layers:
   - Default
   - TransparentFX

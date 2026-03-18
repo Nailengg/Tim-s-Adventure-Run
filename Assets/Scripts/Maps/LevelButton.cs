@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelButton : MonoBehaviour
 {
@@ -53,7 +54,6 @@ public class LevelButton : MonoBehaviour
     void OnClickLevel()
     {
         LevelLoader.selectedLevel = levelIndex;
-
-        UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingMap");
+        SceneManager.LoadScene("LoadingMap");
     }
 }

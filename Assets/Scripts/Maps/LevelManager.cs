@@ -5,14 +5,17 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public LevelButton levelPrefab;
-
     public Transform levelParent;
-
     public int totalLevels;
 
     void Start()
     {
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        foreach (Transform child in levelParent)
+        {
+            Destroy(child.gameObject);
+        }
 
         for (int i = 1; i <= totalLevels; i++)
         {

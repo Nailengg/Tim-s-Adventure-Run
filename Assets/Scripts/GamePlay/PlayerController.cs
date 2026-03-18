@@ -70,9 +70,8 @@ public class PlayerController : MonoBehaviour
             jumpPressed = false;
         }
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
-
     private void UpdateAnimation()
     {
         bool isRunning = Mathf.Abs(rb.velocity.x) > 0.1f;

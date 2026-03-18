@@ -57,7 +57,7 @@ public class AudioGlobalManager : MonoBehaviour
         {
             if (music.scenesAllowed.Contains(sceneName))
             {
-                if (musicSource.clip != music.clip)
+                if (musicSource.clip != music.clip || !musicSource.isPlaying)
                 {
                     musicSource.clip = music.clip;
                     musicSource.loop = true;
@@ -87,5 +87,10 @@ public class AudioGlobalManager : MonoBehaviour
     void ApplyVolume()
     {
         AudioListener.volume = isSoundOn ? 1f : 0f;
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
