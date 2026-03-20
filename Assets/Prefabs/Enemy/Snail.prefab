@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350037087742928399}
   - component: {fileID: 5735653768101448826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 1852538555273047884}
   - component: {fileID: 2866464272387742939}
   - component: {fileID: 4095288225810367272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snail
   m_TagString: Enemy
   m_Icon: {fileID: 0}

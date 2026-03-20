@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    private bool isPaused = false;
     private int score = 0;
 
     [Header("UI")]
+    [SerializeField] private GameObject pauseUi;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverUi;
     [SerializeField] private GameObject reviveUi;
@@ -60,6 +61,24 @@ public class GameManager : MonoBehaviour
         UpdateCoinUI();
     }
 
+    public void PauseGame()
+    {
+        if (isGameOver) return;
+
+        isPaused = true;
+        Time.timeScale = 0;
+
+        pauseUi.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+
+        pauseUi.SetActive(false);
+    }
+
     public void AddCoin(int amount)
     {
         tempCoins += amount;
@@ -73,7 +92,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (isGameOver) return;
+        if (isGameOver || isPaused) return;
 
         HandleTimer();
         UpdateProgress();
@@ -192,8 +211,8 @@ public class GameManager : MonoBehaviour
         countdownUi.SetActive(false);
 
         player.transform.position = lastCheckpointPos + Vector3.up * 0.5f;
-        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.zero;
+        PlayerController pc = player.GetComponent<PlayerController>();
+        pc.ResetPlayer();
 
         Time.timeScale = 1;
         isGameOver = false;

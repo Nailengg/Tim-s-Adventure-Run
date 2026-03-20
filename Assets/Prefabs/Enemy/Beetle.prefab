@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3555244544702374891}
   - component: {fileID: 7821554133825639229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeadTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 8279570274193328978}
   - component: {fileID: 5819701397605889764}
   - component: {fileID: 183877780395458309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Beetle
   m_TagString: Enemy
   m_Icon: {fileID: 0}

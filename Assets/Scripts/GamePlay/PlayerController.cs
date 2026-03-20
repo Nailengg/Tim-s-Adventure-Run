@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
+
     private bool isDead = false;
+
     private Animator animator;
     private bool isGrounded;
     private Rigidbody2D rb;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private bool jumpPressed;
     private bool isSitting;
+
     private BoxCollider2D boxCollider;
     private Vector2 standingSize;
     private Vector2 sittingSize;
@@ -38,6 +41,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (isDead) return;
+
         HandleMovement();
         HandleJump();
         UpdateAnimation();
@@ -45,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
+        if (isDead) return;
+
         if (isSitting)
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
@@ -52,7 +58,7 @@ public class PlayerController : MonoBehaviour
         }
 
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-        
+
         if (moveInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -65,7 +71,9 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump()
     {
-        if(jumpPressed && isGrounded && !isSitting)
+        if (isDead) return;
+
+        if (jumpPressed && isGrounded && !isSitting)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpPressed = false;
@@ -73,9 +81,11 @@ public class PlayerController : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
+
     private void UpdateAnimation()
     {
         if (isDead) return;
+
         bool isRunning = Mathf.Abs(rb.velocity.x) > 0.1f;
         bool isJumping = !isGrounded;
 
@@ -83,13 +93,16 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isJumping", isJumping);
         animator.SetBool("isSitting", isSitting);
     }
+
     public void MoveLeftDown()
     {
+        if (isDead) return;
         moveInput = -1;
     }
 
     public void MoveRightDown()
     {
+        if (isDead) return;
         moveInput = 1;
     }
 
@@ -100,11 +113,14 @@ public class PlayerController : MonoBehaviour
 
     public void JumpButton()
     {
+        if (isDead) return;
         jumpPressed = true;
     }
 
     public void SitDown()
     {
+        if (isDead) return;
+
         isSitting = true;
         boxCollider.size = sittingSize;
         boxCollider.offset = sittingOffset;
@@ -124,6 +140,7 @@ public class PlayerController : MonoBehaviour
         isDead = true;
 
         rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
 
         animator.SetBool("isRunning", false);
         animator.SetBool("isJumping", false);
@@ -141,6 +158,52 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(0, -5f);
         }
 
-        GetComponent<Collider2D>().enabled = false;
+        boxCollider.enabled = false;
+    }
+
+    public void ResetPlayer()
+    {
+        isDead = false;
+
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+
+        boxCollider.enabled = true;
+
+        animator.SetBool("isDead", false);
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isSitting", false);
+
+        animator.Play("Idle");
+
+        moveInput = 0;
+        jumpPressed = false;
+        isSitting = false;
+
+        boxCollider.size = standingSize;
+        boxCollider.offset = standingOffset;
+
+        transform.rotation = Quaternion.identity;
+
+        StartCoroutine(Invincible());
+    }
+
+    IEnumerator Invincible()
+    {
+        int playerLayer = LayerMask.NameToLayer("Player");
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        for (int i = 0; i < 6; i++)
+        {
+            sr.enabled = !sr.enabled;
+            yield return new WaitForSeconds(0.2f);
+        }
+        sr.enabled = true;
+
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
     }
 }
