@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 15f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
-
+    private bool isDead = false;
     private Animator animator;
     private bool isGrounded;
     private Rigidbody2D rb;
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (isDead) return;
         HandleMovement();
         HandleJump();
         UpdateAnimation();
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
     }
     private void UpdateAnimation()
     {
+        if (isDead) return;
         bool isRunning = Mathf.Abs(rb.velocity.x) > 0.1f;
         bool isJumping = !isGrounded;
 
@@ -113,5 +115,32 @@ public class PlayerController : MonoBehaviour
         isSitting = false;
         boxCollider.size = standingSize;
         boxCollider.offset = standingOffset;
+    }
+
+    public void Die(bool playAnimation)
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        rb.velocity = Vector2.zero;
+
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isSitting", false);
+
+        if (playAnimation)
+        {
+            animator.SetBool("isDead", true);
+
+            float dir = transform.localScale.x > 0 ? -1 : 1;
+            rb.AddForce(new Vector2(dir * 5f, 8f), ForceMode2D.Impulse);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, -5f);
+        }
+
+        GetComponent<Collider2D>().enabled = false;
     }
 }

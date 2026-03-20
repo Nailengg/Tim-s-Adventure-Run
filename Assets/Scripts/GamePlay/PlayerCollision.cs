@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     private GameManager gameManager;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +26,9 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.CompareTag("Trap"))
         {
-            gameManager.GameOver();
+            GetComponent<PlayerController>().Die(false);
+
+            StartCoroutine(DelayGameOver());
         }
     }
 
@@ -40,25 +44,60 @@ public class PlayerCollision : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-{
-    if (collision.gameObject.CompareTag("Enemy"))
     {
-        Beetle beetle = collision.gameObject.GetComponent<Beetle>();
-        if (beetle == null || beetle.IsDead()) return;
+        if (!collision.gameObject.CompareTag("Enemy")) return;
 
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        float playerY = transform.position.y;
+        float enemyY = collision.transform.position.y;
 
-        if (transform.position.y > collision.transform.position.y + 0.5f 
-            && rb.velocity.y <= 0)
+        Snail snail = collision.gameObject.GetComponent<Snail>();
+        if (snail != null)
         {
-            beetle.Die();
+            if (snail.IsRolling())
+            {
+                GetComponent<PlayerController>().Die(true);
+                StartCoroutine(DelayGameOver());
+                return;
+            }
 
-            rb.velocity = new Vector2(rb.velocity.x, 8f);
+            if (!snail.IsDead())
+            {
+                if (playerY > enemyY + 0.5f && rb.velocity.y <= 0)
+                {
+                    snail.Die();
+
+                    rb.velocity = new Vector2(rb.velocity.x, 10f);
+
+                    return;
+                }
+            }
+
+            GetComponent<PlayerController>().Die(true);
+            StartCoroutine(DelayGameOver());
+            return;
         }
-        else
+
+        Beetle beetle = collision.gameObject.GetComponent<Beetle>();
+        if (beetle != null)
         {
-            gameManager.GameOver();
+            if (!beetle.IsDead())
+            {
+                if (playerY > enemyY + 0.5f && rb.velocity.y <= 0)
+                {
+                    beetle.Die();
+                    rb.velocity = new Vector2(rb.velocity.x, 8f);
+                    return;
+                }
+            }
+
+            GetComponent<PlayerController>().Die(true);
+            StartCoroutine(DelayGameOver());
         }
     }
-}
+    IEnumerator DelayGameOver()
+    {
+        yield return new WaitForSeconds(1f);
+
+        gameManager.GameOver();
+    }
 }
